@@ -39,10 +39,32 @@ public class ArrayOps {
         }
         return myFinal;
     }
+    // 4e
+    public static int sum(int[][] arr) {
+        int[] myFinal = sumRows(arr);
+        return sum(myFinal);
+    }
 
+    
+    // part 5
 
+    // 5a
+    public static int[] sumCols(int[][] matrix){
+        if (!(matrix.length > 0)){
+            return new int[0];
+        }
+        int[] myFinal = new int[matrix[0].length];
+        for(int x = 0; x < matrix[0].length; x++){
+            int sum = 0;
+            for (int i = 0; i < matrix.length; i++){
+                sum += matrix[i][x];
+            }
+            myFinal[x] = sum;
+        }
+        return myFinal;
 
-    public static int[] sumCols(int[][] matrix){}
+    }
+
     public static boolean isRowMagic(int[][] matrix){}
     public static boolean isColMagic(int[][] matrix) {}
     public static boolean isLocationMagic(int[][] matrix, int row, int col){}
