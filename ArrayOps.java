@@ -24,6 +24,11 @@ public class ArrayOps {
 
     // 4c
     public static int[] sumRows(int[][]matrix){
+        if (matrix.length == 1 && matrix[0].length == 0 || (matrix.length <= 0)){
+            return new int[0];
+            
+        }
+
         int[] myFinal = new int[matrix.length];
         for (int i = 0; i < matrix.length; i++){
             myFinal[i] = sum(matrix[i]);
@@ -50,8 +55,9 @@ public class ArrayOps {
 
     // 5a
     public static int[] sumCols(int[][] matrix){
-        if (!(matrix.length > 0)){
+        if (matrix.length == 1 && matrix[0].length == 0 || (matrix.length <= 0)){
             return new int[0];
+            
         }
         int[] myFinal = new int[matrix[0].length];
         for(int x = 0; x < matrix[0].length; x++){

@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.Arrays;
 
 public class Tester{
@@ -24,6 +23,12 @@ public class Tester{
                };
     int[] B = {  1, 3, 5 };
 
+    int [][] C =
+    {};
+
+    int [][] D =
+    {{}};
+
     // sumRows
         System.out.println( Arrays.toString(ArrayOps.sumRows(A)))   ;
         // [12, 8, -14]
@@ -33,9 +38,19 @@ public class Tester{
     // 2d sum
     System.out.println( ArrayOps.sum(B)) ;
     // 9
-    // sumCols
+
     System.out.println( ArrayOps.sum(A));
     // 6
+
+// 5
+
+    // sum col
+    System.out.println( Arrays.toString(ArrayOps.sumCols(A))) ;
+    // [3, -4, 16, -9]
+
+    System.out.println( Arrays.toString(ArrayOps.sumCols(C))) ;
+    System.out.println( Arrays.toString(ArrayOps.sumCols(D))) ;
+    // {}
 
     int [][] fivetest1 = 
     { {  1,  2, 3, 4 },
@@ -50,6 +65,7 @@ public class Tester{
     int [][] fivetest3 =
     { {  2,  2, 2 },
     {  2, 2, 2 } };
+
 
     // isRowMagic
     System.out.println( ArrayOps.isRowMagic(fivetest1));
