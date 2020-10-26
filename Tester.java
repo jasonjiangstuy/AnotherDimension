@@ -10,6 +10,10 @@ public class Tester{
         System.out.println(ArrayOps.sum(test2));
         // 15
 
+    // Largest 
+        System.out.println(ArrayOps.largest(test1));
+        System.out.println(ArrayOps.largest(test2));
+        // 5
 
 
 
