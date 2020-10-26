@@ -40,11 +40,6 @@ public class ArrayOps {
         return myFinal;
     }
 
-    // 4e
-    public static int sum(int[][] arr) {
-        int[] myFinal = sumRows(arr);
-        return sum(myFinal);
-    }
 
 
     public static int[] sumCols(int[][] matrix){}
