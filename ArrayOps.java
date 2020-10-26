@@ -20,7 +20,15 @@ public class ArrayOps {
         }
         return largest;
 
+    }
 
+    // 4c
+    public static int[] sumRows(int[][]matrix){
+        int[] myFinal = new int[matrix.length];
+        for (int i = 0; i < matrix.length; i++){
+            myFinal[i] = sum(matrix[i]);
+        }
+        return myFinal;
     }
 
 }
