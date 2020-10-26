@@ -100,5 +100,15 @@ public class ArrayOps {
 
 
 
-    public static boolean isLocationMagic(int[][] matrix, int row, int col){}
+    public static boolean isLocationMagic(int[][] matrix, int row, int col){
+
+        int rowFinal = sum(matrix[row]);
+
+        int mySum = 0;
+        for (int i = 0; i < matrix.length; i++){
+            mySum += matrix[i][col];
+        }
+        return (mySum == rowFinal);
+
+    }
 }
